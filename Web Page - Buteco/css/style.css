@@ -1,0 +1,344 @@
+
+*{
+  box-sizing: border-box;
+}
+
+
+body, h1, h2, p, ul, li, a{
+padding:0px;
+margin: 0px;
+}  
+
+
+body{
+  background-image: url("assets/bg-body.png");
+}
+
+ul{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+}
+
+img{
+  display: block;
+  max-width: 100%;
+}
+
+/* super logo */
+
+.superlogo-bg{
+margin-bottom: 30px;
+margin-top: 15px;
+}
+
+.superlogo{
+  display: flex;
+  max-width: 1180px;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+
+}
+
+.superlogo img{
+  width: 180px;
+  border-radius: 100px;
+  border:solid 1px gray;
+}
+
+/* container-menu*/
+
+.container-menu{
+
+  display: flex;
+  max-width: 1180px;
+  max-height: 100%;
+  margin: 0 auto;
+  margin-bottom: 20px;;
+
+}
+
+
+
+.menu{
+  max-width: 1180px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+
+  
+}
+
+.menu-nav{
+  display: flex;
+  max-width: 1180px;
+  flex-wrap: wrap;
+
+  
+}
+
+
+.menu-nav ul{
+  padding: 0px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 1180px;
+
+
+  
+ 
+  /*flex-direction: column; qunado virar celular */
+
+}
+.menu-nav ul li{
+  display: flex;
+  max-width: 1180px;
+  justify-content: space-around;
+    
+
+  }
+
+
+.menu-nav ul a{
+
+  display: flex;
+  align-items: center;
+  font-size: 1.25em;
+  color: white;
+  background-color: rgb(80, 78, 78);
+  justify-content: space-around;
+  width: 180px;
+  height: 50px; 
+  
+}
+
+.menu-nav ul a:hover{
+  color: black;
+}
+
+/* banner*/
+.container-banner{
+  display: flex;
+  max-width: 1180px;
+  max-height: 100%;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  
+}
+
+.banner{
+  display: flex;
+  min-width: 360px;
+  max-width: 1180px;
+  flex: 1;
+    
+
+}
+.banner img{
+  max-width: 1180px;
+  flex: 1;
+  
+}
+
+/*produtos*/
+
+.container-produto{
+  display: flex;  
+  flex-direction: row;
+  max-width: 1380px;
+  justify-content: space-between;
+  margin:0 auto;
+
+}
+
+.produto-foto{
+  position: relative;
+  width: 380px;
+}
+
+.produto-foto img{
+  width: 380px;
+  
+
+}
+
+.produto-info h2, p{
+  text-align: left;
+}
+
+.produto-promo img{
+  position: absolute;
+  top:0;
+  width: 70px;
+  right: 30px;
+}
+
+.produtos{
+  display: flex;  
+  flex-wrap: wrap; 
+  /*colum mobile*/
+  max-width: 1180px;
+  justify-content: space-between;
+  margin:0 auto;
+
+}
+
+.ampliar-foto {
+  background-color: rgba(0, 0, 0, 0.733);
+  position: absolute;
+  top:100px;
+  opacity: 0.8;
+  height: 30px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ampliar-foto p, a{
+  color: white;
+  font-weight: 300;
+  opacity: none; 
+}
+.ampliar-foto  a:hover{
+  color:black;
+}
+
+
+
+.ver-mas{
+  background-color: rgb(80, 78, 78);
+  color: white;
+  height: 25px;
+  width: 60px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+
+.ver-mas p a{
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  height: 25px;
+  color: white;
+}
+
+.ver-mas p a:hover{
+  color: black;
+}
+
+/*footer*/
+
+.container-footer{
+  display: flex;
+  justify-content:center;
+  height: 100px;
+  max-width: 1180px;
+  background-color: rgb(194, 27, 27);
+  color: white;
+  border-radius: 20px 20px 0px 0px;
+  margin: 0 auto;
+
+}
+
+.footer-menu{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-menu ul{
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.footer-menu li{
+   float:left;
+   border-right: solid 2px white;
+   padding: 10px;
+}
+
+.footer-menu a{
+  color: white;
+
+}
+.footer-menu a:hover{
+  color:black;
+}
+
+
+
+/*mobile*/
+@media(min-width: 360px) and (max-width:640px){
+  .container-banner{
+    display: flex;
+    max-width: 100vh;
+    max-height: 100%;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    
+  }
+  
+  .banner{
+    display: flex;
+    min-width: 360px;
+    flex: 1;
+      
+  
+  }
+  .banner img{
+    width: 380px;
+    
+  }
+  .menu-nav ul{
+    display: block;
+    width: 100vh;
+    width: auto;
+  }
+  
+  .menu-nav ul a{
+    display: flex;
+    width: 360px;
+  }
+
+  .container-footer{
+    height: 100%;
+    max-width: 100vw;
+    border-radius:0px;
+  }
+  .footer-menu li{
+    float: none;
+    border:none;
+    
+}
+}
+
+@media(min-width: 641px) and (max-width:1100px){
+
+  .menu-nav ul{
+    width: auto;
+  }
+  .container-banner{
+    display: flex;
+    max-width: auto;
+    max-height: 100%;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    
+  }
+  
+  .banner{
+    display: flex;
+    min-width: 360px;
+    flex: 1;
+      
+  
+  }
+  .banner img{
+    width: 300px;
+}
+}
