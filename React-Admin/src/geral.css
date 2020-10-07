@@ -1,0 +1,32 @@
+
+.container-geral{
+  display: flex;
+  background-color: black;
+  flex-wrap: wrap;
+ 
+}
+.container-sidebar{
+  display: flex;
+  height: 100vw;
+  max-width: 100%;
+  
+  background-color: #224abe;
+ 
+  
+}
+
+.container-cards{
+  display: flex;
+  flex-direction: column;
+  flex:1;
+  margin-left: 10px;
+}
+
+.footer{
+  display: flex;
+  flex-direction: column;
+  justify-items: baseline;
+  justify-content: flex-end;
+  bottom: 0;
+  background-color: red;
+}
